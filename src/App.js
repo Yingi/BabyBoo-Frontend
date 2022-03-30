@@ -11,14 +11,14 @@ const abi = require("./abis/BabyBooCollection.json");
 function App() {
 
   let initialNFT = [
-    { name: "Mario", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Luigi", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Yoshi", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Donkey Kong", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Mario", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Luigi", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Yoshi", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
-    { name: "Donkey Kong", symbol: "SMWC", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "Marvel", symbol: "MVHH", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "Batman", symbol: "BAT", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "SpiderMan", symbol: "SM", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "Will", symbol: "WM", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "Panther", symbol: "BP", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "SuperMan", symbol: "SMC", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "Kong", symbol: "KG", copies: 10, image: "https://via.placeholder.com/150" },
+    { name: "AntMan", symbol: "AM", copies: 10, image: "https://via.placeholder.com/150" },
   ]
 
   const [showModal, setShowModal] = useState(false)
@@ -100,8 +100,8 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Title>My Collection </Title>
-        <Subtitle>This is my First NFT Layout</Subtitle>
+        <Title>Collection </Title>
+        <Subtitle>Initial NFT Layout</Subtitle>
         <Grid>
           {
             nft.map((nft, i) =>
